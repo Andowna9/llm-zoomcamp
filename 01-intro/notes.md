@@ -2,7 +2,7 @@
 
 We'll treat LLMs as blackbox models that receive prompts as input and generate answers as output. Intuitively, they do so by predicting the most logical sequence of words that follow.
 
-## RAG (Retrival Augmented Generation)
+## RAG (Retrieval Augmented Generation)
 
 RAG is a framework that enables LLMs to answer questions using external knowledge that is not part of their training data. It consists of two main steps:
 
