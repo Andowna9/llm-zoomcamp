@@ -94,7 +94,7 @@ Query to retrieve documents:
         "bool": {
             "must": {
                 "multi_match": {
-                    "query": query,
+                    "query": "<QUERY_HERE>",
                     "fields": ["question^3", "text", "section"],
                     "type": "best_fields"
                 }
