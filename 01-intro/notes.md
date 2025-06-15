@@ -113,7 +113,7 @@ Check more about [multimatch queries](./elastic-search.md).
 
 ## Generation
 
-Configuring OpenAI client to work with Groq.
+Configuring OpenAI client to work with [Groq](https://console.groq.com/docs/openai).
 ```python
 client = OpenAI(
     base_url="https://api.groq.com/openai/v1",
@@ -136,7 +136,7 @@ CONTEXT:
 """
 ```
 
-Sending the constructed prompt to one of Groq's models.
+Once the prompt is formatted with the question and context documents, sending it to one of Groq's models is achieved with the following code:
 ```python
 response = client.chat.completions.create(
     model='llama-3.3-70b-versatile',
@@ -150,4 +150,15 @@ response = client.chat.completions.create(
 answer = response.choices[0].message.content
 ```
 
+## Overview
+
+In terms of code, if we add all the pieces together a modular RAG pipeline looks like this:
+```python
+def rag(query: str) -> str:
+    results = search(query)
+    prompt = build_prompt(query, results)
+    answer = llm(prompt)
+    return answer
+```
+> `results` is the list of documents. Full code on [rag-intro notebook](./rag-intro.ipynb).
 
