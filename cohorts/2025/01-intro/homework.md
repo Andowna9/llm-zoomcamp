@@ -1,5 +1,8 @@
 ## Homework: Introduction
 
+Check the [homework notebook](../../../01-intro/homework.ipynb) to know
+how results are obtained.
+
 In this homework, we'll learn more about search and use Elastic Search for practice. 
 
 > It's possible that your answers won't match exactly. If it's the case, select the closest one.
@@ -14,6 +17,8 @@ curl localhost:9200
 ```
 
 What's the `version.build_hash` value?
+
+It is `dbcbbbd0bc4924cfeb28929dc05d82d662c527b7`.
 
 
 ## Getting the data
@@ -56,7 +61,7 @@ pip install elasticsearch
 Which function do you use for adding your data to elastic?
 
 * `insert`
-* `index`
+* `index` - **This one**
 * `put`
 * `add`
 
@@ -72,7 +77,7 @@ What's the score for the top ranking result?
 
 * 84.50
 * 64.50
-* 44.50
+* 44.50 - **This one**
 * 24.50
 
 Look at the `_score` field.
@@ -86,7 +91,7 @@ This time we are only interested in questions from `machine-learning-zoomcamp`.
 Return 3 results. What's the 3rd question returned by the search engine?
 
 * How do I debug a docker container?
-* How do I copy files from a different folder into docker container’s working directory?
+* How do I copy files from a different folder into docker container’s working directory? - **This one**
 * How do Lambda container images work?
 * How can I annotate a graph?
 
@@ -120,7 +125,7 @@ CONTEXT:
 What's the length of the resulting prompt? (use the `len` function)
 
 * 946
-* 1446
+* 1446 - **This one**
 * 1946
 * 2446
 
@@ -145,7 +150,7 @@ Use the `encode` function. How many tokens does our prompt have?
 
 * 120
 * 220
-* 320
+* 320 - **This one**
 * 420
 
 Note: to decode back a token into a word, you can use the `decode_single_token_bytes` function:
