@@ -20,7 +20,7 @@ RAG is a framework that enables LLMs to answer questions using external knowledg
 
 Create Python environment.
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 ```
 
 Activate environment and install dependencies.
@@ -62,7 +62,15 @@ This is a widely-used, production search engine (memory persistent).
 
 Running it with Docker.
 ```shell
-docker run -it --rm --name elasticsearch -m 4GB -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "xpack.security.enabled=false" docker.elastic.co/elasticsearch/elasticsearch:8.4.3
+docker run -it \
+    --rm \
+    --name elasticsearch \
+    -m 4GB \
+    -p 9200:9200 \
+    -p 9300:9300 \
+    -e "discovery.type=single-node" \
+    -e "xpack.security.enabled=false" \
+    docker.elastic.co/elasticsearch/elasticsearch:8.17.6
 ```
 
 >Check that it is up and running with `curl http://localhost:9200`.
