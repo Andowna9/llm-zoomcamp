@@ -121,6 +121,8 @@ Check more about [multimatch queries](./elastic-search.md).
 
 ## Generation
 
+Groq has been chosen as a cloud LLM service since it has a free tier. Check [OpenAI alternatives](../awesome-llms.md).
+
 Configuring OpenAI client to work with [Groq](https://console.groq.com/docs/openai).
 ```python
 client = OpenAI(
@@ -156,6 +158,18 @@ response = client.chat.completions.create(
     ]
 )
 answer = response.choices[0].message.content
+```
+
+### Estimating costs
+
+Costs are estimated based on the number of input/output tokens. Tokens are integer values that represent a unit of text and are understood by LLMs. Each model uses a different encoding; for example, OpenAI's models use the `tiktoken` library.
+
+```python
+import tiktoken
+
+encoding = tiktoken.encoding_for_model("gpt-4o")
+tokens = encoding.encode(prompt)
+num_tokens = len(tokens)
 ```
 
 ## Overview
