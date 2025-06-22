@@ -89,7 +89,7 @@ client.create_collection(
 ```
 * We need to specify the **same configuration that the embedding uses**.
 
-A point consists of an **ID** (integer or UUID), the **embedding** that represents the data point and **payload** to add metadata for interpretability/filtering.
+A point represents a single document or chunk. It consists of an **ID** (integer or UUID), the **embedding** for the data point and **payload** to add metadata for interpretability/filtering.
 
 ```python
 from qdrant_client import models
@@ -107,7 +107,7 @@ point = models.PointStruct(
 ```
 
 
-The point can be added to a collection. Fastembed will  automatically download and use the declared embedding model.
+Points can be added to a collection once constructed. Fastembed will  automatically download and use the declared embedding model.
 
 ```python
 client.upsert(
