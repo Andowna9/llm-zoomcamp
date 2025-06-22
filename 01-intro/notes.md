@@ -125,6 +125,8 @@ Groq has been chosen as a cloud LLM service since it has a free tier. Check [Ope
 
 Configuring OpenAI client to work with [Groq](https://console.groq.com/docs/openai).
 ```python
+from openai import OpenAI
+
 client = OpenAI(
     base_url="https://api.groq.com/openai/v1",
     api_key=os.environ.get("GROQ_API_KEY")
