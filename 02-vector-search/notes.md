@@ -120,7 +120,7 @@ client.upsert(
 
 ### Visualizing Vectors
 
-The vector space and closeness of data points (colored by course) can be visualized using the UI with this query:
+The vector space (2D projection) and closeness of data points (colored by course) can be visualized using the UI with this query:
 ```json
 {
   "limit": 948,
@@ -175,5 +175,15 @@ results to match the course provided.
 ```
 
 > More about it on [Qdrant Filtering](https://qdrant.tech/articles/vector-search-filtering/).
+
+## Usage in RAG
+
+The `rag.ipynb` notebook implements the same [modular RAG pipeline](../01-intro/notes.md#overview) switching the text/keyword search function with vector search.
+
+The document's question and answer fields are joined and embeded because both are considered semantically useful for the RAG system. 
+```python
+text = doc['question'] + ' ' + doc['text']
+vector = models.Document(text=text, model=model_handle)
+```
 
 
