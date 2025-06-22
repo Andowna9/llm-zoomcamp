@@ -118,7 +118,7 @@ client.upsert(
 
 >Besides this basic upsert (one API call per point), check other ways to efficiently [upload points](https://qdrant.tech/documentation/concepts/points/#upload-points).
 
-### Visualizaing Vectors
+### Visualizing Vectors
 
 The vector space and closeness of data points (colored by course) can be visualized using the UI with this query:
 ```json
