@@ -176,6 +176,24 @@ results to match the course provided.
 
 > More about it on [Qdrant Filtering](https://qdrant.tech/articles/vector-search-filtering/).
 
+## Hybrid Search
+
+Hybrid search combines different retrieval methods to build more reliable systems. Statistical keyword-based techniques like TF-IDF and BM25 are often used alongside semantic search:
+
+* **TF-IDF**: The Term Frequency (TF) increases with a term’s occurrences in a document, though not linearly. The Inverse Document Frequency (IDF) lowers the weight of terms common across all documents, highlighting distinctive ones.
+
+* **BM25**: An enhanced version of TF-IDF that adds document length normalization, preventing longer documents from having an unfair advantage.
+
+These methods typically use sparse vectors, where most dimensions are zero. Non-zero entries indicate the presence of specific terms. Sparse representations can adapt to new, unseen words by adding new dimensions dynamically.
+
+Hybrid search can be implemented in two common ways:
+
+* Using a dense retriever (semantic) followed by a sparse reranker (statistical).
+
+* Applying Reciprocal Rank Fusion (RRF) to merge rankings from multiple retrieval methods.
+
+Check [hybrid search notebook](./hybrid_search.ipynb) for a simple implementation in Quadrant.
+
 ## Usage in RAG
 
 The `rag.ipynb` notebook implements the same [modular RAG pipeline](../01-intro/notes.md#overview) switching the text/keyword search function with vector search.
