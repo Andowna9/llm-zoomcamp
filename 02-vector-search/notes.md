@@ -178,7 +178,7 @@ results to match the course provided.
 
 ## Hybrid Search
 
-Hybrid search combines different retrieval methods to build more reliable systems. Statistical keyword-based techniques like TF-IDF and BM25 are often used alongside semantic search:
+Hybrid search combines different retrieval methods to build more reliable systems. Statistical keyword-based techniques are often used alongside semantic search:
 
 * **TF-IDF**: The Term Frequency (TF) increases with a term’s occurrences in a document, though not linearly. The Inverse Document Frequency (IDF) lowers the weight of terms common across all documents, highlighting distinctive ones.
 
