@@ -192,7 +192,7 @@ Hybrid search can be implemented in two common ways:
 
 * Applying Reciprocal Rank Fusion (RRF) to merge rankings from multiple retrieval methods.
 
-Check [hybrid search notebook](./hybrid_search.ipynb) for a simple implementation in Quadrant.
+Check [hybrid search notebook](./hybrid_search.ipynb) for a **simple implementation** in Quadrant.
 
 ## Usage in RAG
 
