@@ -69,7 +69,7 @@ pip install -q "qdrant-client[fastembed]>=1.14.2"
 ```
 Setting up client.
 ```python
-from qdrant_client import QdrantClient
+from qdrant_client import QdrantClient, models
 
 client = QdrantClient("http://localhost:6333")
 ```
@@ -92,8 +92,6 @@ client.create_collection(
 A point represents a single document or chunk. It consists of an **ID** (integer or UUID), the **embedding** for the data point and **payload** to add metadata for interpretability/filtering.
 
 ```python
-from qdrant_client import models
-
 model_handle = 'jina-embeddings-v2-small-en'
 point = models.PointStruct(
    id=0,
@@ -203,5 +201,9 @@ The document's question and answer fields are joined and embeded because both ar
 text = doc['question'] + ' ' + doc['text']
 vector = models.Document(text=text, model=model_handle)
 ```
+
+## Cosine Similarity
+
+Check [vector search homework](./homework.ipynb) for a better understanding of how cosine similarity works.
 
 
