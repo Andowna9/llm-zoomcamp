@@ -1,5 +1,8 @@
 ## Homework: Vector Search
 
+Check the [homework notebook](../../../02-vector-search/homework.ipynb) to know
+how results are obtained.
+
 In this homework, we will learn more about vector search
 and embedding. Like in the module, we will use Qdrant and
 fastembed
@@ -39,7 +42,7 @@ You should get a numpy array of size 512.
 What's the minimal value in this array?
 
 * -0.51
-* -0.11
+* -0.11 - **This one**
 * 0
 * 0.51
 
@@ -77,7 +80,7 @@ and the vector for the document?
 * 0.3
 * 0.5
 * 0.7
-* 0.9
+* 0.9 - **This one**
 
 ## Q3. Ranking by cosine
 
@@ -112,7 +115,7 @@ cosine between the query vector and all the documents.
 What's the document index with the highest similarity? (Indexing starts from 0):
 
 - 0
-- 1
+- 1 - **This one**
 - 2
 - 3
 - 4
@@ -139,7 +142,7 @@ full_text = doc['question'] + ' ' + doc['text']
 Embed this field and compute the cosine between it and the
 query vector. What's the highest scoring document?
 
-- 0
+- 0 - **This one**
 - 1
 - 2
 - 3
@@ -154,7 +157,7 @@ What's the smallest dimensionality for models in fastembed?
 
 - 128
 - 256
-- 384
+- 384 - **This one**
 - 512
 
 One of these models is `BAAI/bge-small-en`. Let's use it.
@@ -200,7 +203,7 @@ What's the highest score in the results?
 (The score for the first returned record):
 
 - 0.97
-- 0.87
+- 0.87 - **This one**
 - 0.77
 - 0.67
 
