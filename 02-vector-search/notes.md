@@ -206,7 +206,7 @@ vector = models.Document(text=text, model=model_handle)
 
 Check [vector search homework](./homework.ipynb) for a better understanding of how cosine similarity works.
 
-## Building A search Engine
+## Building A Basic Search Engine
 
 Check the [vector search engine notebook](./vector_search_engine.ipynb) to review how to build a basic one from scratch, including how to apply the `hit-rate` metric to measure its performance.
 
