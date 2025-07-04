@@ -12,6 +12,8 @@
 
 # Homework
 
+Check the [solutions notebook](./homework.ipynb).
+
 ## Question 1. dlt Version
 
 In this homework, we will load the data from our FAQ to Qdrant
