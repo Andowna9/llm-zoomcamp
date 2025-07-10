@@ -89,10 +89,9 @@ def agentic_rag(question):
 Example search action when accesing FAQ is needed by LLM.
 ```json
 {
-    "action": "SEARCH",
-    "reasoning": "The context is empty, 
-        so I need to search the FAQ database."
- }
+  "action": "SEARCH",
+  "reasoning": "The context is empty, so I need to search the FAQ database."
+}
 ```
 
 ### Answer action
@@ -100,12 +99,9 @@ Example search action when accesing FAQ is needed by LLM.
 Example answer to a general question.
 ```json
 {
-    "action": "ANSWER",
-    "answer": "To set up Docker, 
-        you'll need to download and install 
-        the Docker Desktop application 
-        from the official Docker website.",
-    "source": "OWN_KNOWLEDGE"
+  "action": "ANSWER",
+  "answer": "To set up Docker, you'll need to download and install the Docker Desktop application from the official Docker website.",
+  "source": "OWN_KNOWLEDGE"
 }
 ```
 
@@ -113,11 +109,9 @@ Example answer to a course question based on the search context from the FAQ.
 
 ```json
 {
-    "action": "ANSWER",
-    "answer": "To get a course certificate, 
-        you need to finish the course 
-        with a 'live' cohort.",
-    "source": "CONTEXT"
+  "action": "ANSWER",
+  "answer": "To get a course certificate, you need to finish the course with a 'live' cohort.",
+  "source": "CONTEXT"
 }
 ```
 
