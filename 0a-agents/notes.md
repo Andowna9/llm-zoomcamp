@@ -257,7 +257,7 @@ while True:
 
 ## Function Calling
 
-Maintaining custom prompts that define agent actions and response logic is quite cumbersome. That is why *function calling* frameworks exist.
+Maintaining custom prompts that define agent actions and response logic is quite cumbersome. That is why *function calling* is an API offered by LLM providers.
 
 - Check https://console.groq.com/docs/tool-us
 
@@ -318,4 +318,42 @@ executed or a final response was given.
 
 > Be explicit about telling the LLm when to call each function in the system prompt.
 
+
+### Pydantic AI
+
+Pydantic AI is an agentic framework which makes it even simpler to implement chat agents with access to tools.
+
+```python
+from pydantic_ai import Agent, RunContext
+
+chat_agent = Agent(  
+    'groq:llama-3.3-70b-versatile',
+    system_prompt=developer_prompt,
+)
+```
+
+The functions's docstrings is automatically read to create the tool definition.
+
+```python
+from typing import Dict
+
+@chat_agent.tool
+def search_tool(ctx: RunContext, query: str) -> Dict[str, str]:
+    """
+    Search the FAQ for relevant entries matching the query.
+
+    Parameters
+    ----------
+    query : str
+        The search query string provided by the user.
+
+    Returns
+    -------
+    list
+        A list of search results (up to 5), each containing relevance information 
+        and associated output IDs.
+    """
+    print(f"search('{query}')")
+    return search(query)
+```
 
