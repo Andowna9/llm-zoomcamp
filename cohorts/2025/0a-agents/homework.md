@@ -3,6 +3,8 @@
 In this homework, we will learn more about function calling,
 and we will also explore MCP - model-context protocol. 
 
+Check the [homework notebook](../0a-agents/homework.md) for the solutions to the proposed questions.
+
 
 ## Preparation
 
