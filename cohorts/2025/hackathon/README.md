@@ -13,17 +13,19 @@ Welcome to the DataTalks.Club Summer 2025 AI Hackathon! This is your opportunity
 
 ## Getting Started
 
-1. Join the `#hackathon` channel in [Slack](https://datatalks.club/slack.html)
+1. Join the [`#hackathon`](https://app.slack.com/client/T01ATQK62F8/C094SL8BNMT) channel in [Slack](https://datatalks.club/slack.html)
 2. Form your team or indicate you're looking for teammates
 3. Start brainstorming project ideas
 4. Submit [this form](https://airtable.com/appjxMzaGej3KHwEh/shr12Sx3SGsStvjEd) with your idea so we can review it and add to the list of project ideas
-5. Begin planning and development
+5. Watch the [Launch Stream](https://www.youtube.com/watch?v=APtJ1SDGdw0)
+6. Begin planning and development
 
 ## Quick Links
 
 - [Submit your idea](https://airtable.com/appjxMzaGej3KHwEh/shr12Sx3SGsStvjEd)
-- [Join discussion and find a team](https://datatalks.club/slack.html) (#hackathon channel)
+- [Join discussion and find a team](https://datatalks.club/slack.html) ([#hackathon](https://app.slack.com/client/T01ATQK62F8/C094SL8BNMT) channel)
 - [LLM Zoomcamp course materials](https://github.com/DataTalksClub/llm-zoomcamp)
+- [Hackathon Launch Stream](https://lu.ma/i98j574k)
 
 ## About the Hackathon
 
@@ -56,7 +58,7 @@ This hackathon is designed to give you real-world experience in building LLM-pow
 
 | Phase | Dates | Details |
 |:------|:------|:--------|
-| **Hackathon Launch** | July 15, 2025 (Wed) | Live stream where we'll review the project ideas and add selected ones to the "Project Ideas" section. We'll also host an open Q&A session. |
+| **Hackathon Launch** | July 14, 2025 (Mon) | We will review project ideas and answer your questions. |
 | **Build Sprint** | Mid-July - Mid-September | Nine-week window where you'll work on your projects. We'll have weekly office hours to help you and regular check-ins to track progress. |
 | **Final Submission** | September 15, 2025 23:59 CET | Submit your completed project including the demo video, GitHub repository, and article. |
 | **Demo Week** | September 22-26, 2025 | Selected teams will present their projects live. Our panel of judges will evaluate the submissions and announce winners during the closing ceremony. |
@@ -69,7 +71,7 @@ This hackathon is designed to give you real-world experience in building LLM-pow
 - You are not required to be LLM Zoomcamp student to participate in the hackathon
 
 #### Finding Teammates
-Join the `#hackathon` channel in Slack and write a short message there.
+Join the [`#hackathon`](https://app.slack.com/client/T01ATQK62F8/C094SL8BNMT) channel in Slack and write a short message there.
 
 Here's an example of what you can write:
 ```
@@ -196,7 +198,17 @@ Our distinguished panel of judges includes:
 
 ## Questions?
 
-Post in the `#hackathon` channel in [Slack](https://datatalks.club/slack.html)
+Post in the [`#hackathon`](https://app.slack.com/client/T01ATQK62F8/C094SL8BNMT) channel in [Slack](https://datatalks.club/slack.html)
+
+### FAQ
+
+- **Q:** So if someone participates in the hackathon, will it count as a capstone project for LLM Zoomcamp?
+- **A:** No, a project and a hackathon are two separate things. You work on the project alone and it has to satisfy the pre-defined criteria. For the hackathon, you work in teams and you don't have any strict criteria to satisfy. 
+
+
+
+
+
 
 ---
 *Last updated: July 2025*
