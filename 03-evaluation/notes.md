@@ -1,15 +1,15 @@
 # 03 - Evaluation Notes
 
-Evaluating the retrieval process in a RAG pipeline is important because it helps to determine the method that achieves better results, whether it is keyword or vector search.
+**Evaluating the retrieval process** in a RAG pipeline is important because it helps to determine the search method that achieves better results, whether it is keyword or vector based.
 
 A ground truth dataset is required to link queries to their known relevant documents. This correspondence is what will allow us to calculate [search/ranking evaluation metrics](./search_evaluation/evaluation-metrics.md).
 
 ## Ground Truth Data 
 There are different ways of getting ground truth data:
 
-- Human annotators -> very expensive
-- Automatically based on user queries and evaluation results -> more complex
-- LLMs -> simplest and cheapest, consider using **parallel processing** (threads) when making many calls
+- **Human annotators** -> very expensive
+- **Automatically** based on user queries and evaluation results -> more complex
+- **LLMs** -> simplest and cheapest, consider using **parallel processing** (threads) when making many calls
 
 ### ID Assignment
 
@@ -44,9 +44,11 @@ Provide the output in parsable JSON without using code blocks:
 > This is a simplified example in which each question has only one relevant document.
 
 
-## Text Search Evaluation
+## Search Evaluation
 
-> For a full example of evaluating elasticsearch and minsearch, check the [text evaluation notebook](./search_evaluation/evaluate-text.ipynb).
+> For a full example of **evaluating text search with elasticsearch and minsearch**, check the [text evaluation notebook](./search_evaluation/evaluate-text.ipynb).
+>
+> For a full example of **evaluating vector search with minsearch and qdrant** check the [homework notebook](./homework.ipynb).
 
 Before applying any metrics, search results are needed for every ground truth data record. For instance, as a list of boolean values where `True` means the relevant document is among the top results for that particular query.
 
@@ -93,14 +95,9 @@ def mrr(relevance_total):
 
 > In both metrics, a higher value represents better performance.
 
-
-## Vector Search Evaluation
-
-Todo
-
 ## RAG Evaluation
 
-Search is just one part of the RAG system. If we want to evaluate how good the prompts and the LLM answers are there are also other techinques available.
+Search is just one part of the RAG system. If we want to **evaluate how good the prompts and the LLM answers are** there are also other techinques available.
 
 ### Offline Evaluation
 
@@ -125,7 +122,7 @@ v_llm.dot(v_orig)
 
 ### LLM As Judge
 
-Another way of evaluation is using an LLM as the one that compares and exlpains
+Another way of evaluation is using an LLM as the one that compares and explains
 why answers may be similar or not. An example prompt:
 
 ```python
