@@ -1,5 +1,7 @@
 ## Homework: Search Evaluation
 
+Check the [homework notebook](../../../03-evaluation/homework.ipynb) to see how answers are obtained.
+
 In this homework, we will evaluate the results of vector
 search.
 
@@ -95,7 +97,7 @@ What's the hitrate for this approach?
 
 * 0.64
 * 0.74
-* 0.84
+* 0.84 - **This one**
 * 0.94
 
 
@@ -147,7 +149,7 @@ vindex.fit(X, documents)
 Evaluate this seach method. What's MRR for it?
 
 - 0.25
-- 0.35
+- 0.35 - **This one**
 - 0.45
 - 0.55
 
@@ -170,7 +172,7 @@ What's the hitrate?
 
 - 0.62
 - 0.72
-- 0.82
+- 0.82 - **This one**
 - 0.92
 
 ## Q4. Qdrant
@@ -185,7 +187,7 @@ What's the MRR?
 
 - 0.65
 - 0.75
-- 0.85
+- 0.85 - **This one**
 - 0.95
 
 ## Q5. Cosine simiarity
@@ -272,7 +274,7 @@ What's the average cosine?
 
 - 0.64
 - 0.74
-- 0.84
+- 0.84 - **This one**
 - 0.94
 
 This is how you do it:
@@ -323,7 +325,7 @@ Let's compute it for the pairs in the entire dataframe.
 What's the average Rouge-1 F1?
 
 - 0.25
-- 0.35
+- 0.35 - **This one**
 - 0.45
 - 0.55
 
