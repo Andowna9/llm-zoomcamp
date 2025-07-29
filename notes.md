@@ -8,3 +8,4 @@
 | Monitoring        | N/A     | N/A                            |
 | Best Practices    | N/A | N/A                            |
 | Agents            | [Link](0a-agents/notes.md)               | [Link](0a-agents/homework.ipynb)       |
+| Dlt & Cognee      | [Link](cohorts/2025/workshops/dlt/notes.md) | [Link](cohorts/2025/workshops/dlt/search_knowledge_graph.ipynb) |
